@@ -10,6 +10,11 @@ public class Trabajador extends Persona {
         //TODO Auto-generated constructor stub
     }
 
+    public Trabajador() {
+        super();
+        //TODO Auto-generated constructor stub
+    }
+
     public String getNoSeguroSocial() {
         return NoSeguroSocial;
     }

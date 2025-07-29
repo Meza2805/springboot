@@ -18,10 +18,6 @@ import com.rafael.curso.springboot.webapp.spring_web.models.Estudiante;
 public class api {
     
 
-  
-
-
-
       @GetMapping("/saludo")
       public  Map<String, Object> saludo() {
         Map<String, Object> response = new HashMap<>();

@@ -12,9 +12,11 @@ import com.rafael.curso.springboot.webapp.spring_web.models.Estudiante;
 
 @RestController
 @RequestMapping("/estudiantes")
+
 public class EstudianteController {
 
     @PostMapping("/Registrar_Estudiante")
+    
     public Map<String, Object> registrarEstudiante(@RequestBody Estudiante estudiante) {
         Map<String, Object> response = new HashMap<>();
 
