@@ -5,6 +5,10 @@ public class Estudiante  extends Persona{
     private String NoCarnet;
     private String Curso;
 
+    public Estudiante() {
+        super();
+    }
+
     public Estudiante(String FirstName, String LastName,String NoCarnet, String Curso) {
         super(FirstName, LastName);
         this.Curso = Curso;

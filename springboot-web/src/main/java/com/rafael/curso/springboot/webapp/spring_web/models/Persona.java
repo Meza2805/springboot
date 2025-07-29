@@ -5,6 +5,9 @@ public class Persona {
     private String FirstName;
     private String LastName;
 
+       public Persona() {}
+
+  
     public Persona (String FirstName, String LastName)
     {   
         this.FirstName = FirstName;
