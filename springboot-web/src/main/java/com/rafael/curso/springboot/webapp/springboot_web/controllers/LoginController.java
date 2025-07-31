@@ -45,7 +45,7 @@ public class LoginController {
     }
     
 
-        @PostMapping("/VerificarFormatoContrasena")
+      @PostMapping("/VerificarFormatoContrasena")
     public Map<String, Object> VerificarFormatoContraseña(@RequestBody Login acceso) {
         Map<String, Object> response = new HashMap<>();
         String password = acceso.getPassword();

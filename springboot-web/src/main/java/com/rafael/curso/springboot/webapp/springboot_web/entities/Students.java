@@ -5,10 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
 @Entity
-@Table(name = "Users")
-public class User {
+@Table(name = "students")
+public class Students {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,12 +15,12 @@ public class User {
     private String name;
     private String email;
 
-    public User() {
+    public Students() {
         // Default constructor for JPA
     }
 
     public Long getId() {
-           return id;
+        return id;
     }
 
     public String getName() {
@@ -43,5 +42,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+    
+   
 
 }
