@@ -9,17 +9,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rafael.curso.springboot.webapp.spring_web.models.Estudiante;
+import com.rafael.curso.springboot.webapp.springboot_web.repositories.StudentsRepository;
 
 @RestController
 @RequestMapping("/estudiantes")
 
 public class EstudianteController {
 
+   private StudentsRepository studentsRepository;
+
     @PostMapping("/Registrar_Estudiante")
     
     public Map<String, Object> registrarEstudiante(@RequestBody Estudiante estudiante) {
         Map<String, Object> response = new HashMap<>();
-
+        
         response.put("mensaje", "Estudiante registrado correctamente");
         response.put("datos", estudiante);
 
